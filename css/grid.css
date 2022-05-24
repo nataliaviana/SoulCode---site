@@ -1,0 +1,45 @@
+header{
+    background-color: yellow;
+    /* height: 100px; */
+    grid-area: h;
+    text-align: center;
+    line-height: 15vh;
+}
+
+main{
+    background-color: blue;
+    /* height: 100px; */
+    grid-area: m;
+    text-align: center;
+    line-height: 70vh;
+    color: white;
+}
+
+aside{
+    background-color: green;
+    /* height: 100px; */
+    grid-area: a;
+    text-align: center;
+    line-height: 70vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer{
+    background-color: red;
+    /* height: 100px; */
+    grid-area: f;
+    text-align: center;
+    line-height: 15vh;
+    color: white;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: 3fr 1fr; /*a primeira coluna fica com 3 frações e a segunda com uma fração - simulando -> 75% (main) e  25% (aside)*/
+    grid-template-rows: 15vh 70vh 15vh;
+    grid-template-areas: "h h"
+                         "m a"
+                         "f f";
+}
